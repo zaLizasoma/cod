@@ -31,7 +31,7 @@ void loop() {
   Serial.print("Температура: ");
    Serial.println(bme.readTemperature());
 
-  Serial.print("Содержание дыма в атмосфере: ");
+  Serial.print("Содержание co2 в атмосфере: "); //в ppa
     Serial.println(mq2.readSmoke());
   Serial.print("Влажность в атмосфере: ");
    Serial.println(mq2.readRatio());
@@ -45,7 +45,7 @@ void loop() {
    Serial.println(photocellReading); 
 
   Serial.println();
-  // giver();
+  // giver(); //радио(сейчас нет антенны) 
   delay(1500);
 }
 
